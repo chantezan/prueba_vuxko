@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/proyecto
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ubuntu
+hooks:
+  BeforeInstall:
+    - location: clear.sh
+      timeout: 300
+  ApplicationStart:
+    - location: servidor.sh
+      timeout: 300
