@@ -15,9 +15,21 @@ services:
     depends_on:
     - web
 
+  db:
+    container_name: postgres_vuxkoapp
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+
   web:
     build: .
-    container_name: reservoFeNewTestDeploy
+    container_name: vuxkoWebDeploy
     sysctls:
       net.core.somaxconn: 1024
     logging:
@@ -29,26 +41,29 @@ services:
     env_file:
     - ../.env
     volumes:
-    - ./:/src
+    - ./:/code
     - /home/ubuntu/:/home
     expose:
     - "3000"
     tty: true
+    depends_on:
+    - db
+    - redis
 
   redis:
     image: "redis:latest"
-    container_name: feredis
+    container_name: vuxkoWebredis
     ports:
     - "6378:6379"
 
   celery:
     build: .
-    container_name: feCelery
+    container_name: vuxkoWebCelery
     env_file:
     - ../.env
-    command: celery -A ProyectoFe.celery worker -B -l info
+    command: celery -A vuxkotrade.celery worker -B -l info
     volumes:
-    - .:/src
+    - .:/code
     depends_on:
     - redis
 
