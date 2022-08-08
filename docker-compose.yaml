@@ -14,7 +14,7 @@ services:
       - "5432:5432"
   web:
     container_name: vuxkoapp
-    build: .
+    image: public.ecr.aws/i0m6d4r8/libpoblete:latest
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code

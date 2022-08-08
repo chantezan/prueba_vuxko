@@ -5,9 +5,7 @@ RUN apt-get update && apt-get install -y \
     openssl \
     libssl-dev
 ENV PYTHONUNBUFFERED 1
-RUN mkdir /code;
-WORKDIR /code
-COPY requirements.txt /code/
+
 # TA-Lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   tar -xvzf ta-lib-0.4.0-src.tar.gz && \
@@ -17,6 +15,11 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   make install
 RUN rm -R ta-lib ta-lib-0.4.0-src.tar.gz
 RUN cd ..
+
+RUN mkdir /code;
+WORKDIR /code
+COPY requirements.txt /code/
+
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install uwsgi

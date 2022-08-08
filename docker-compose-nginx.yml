@@ -28,7 +28,7 @@ services:
       - "5432:5432"
 
   web:
-    build: .
+    image: public.ecr.aws/i0m6d4r8/libpoblete:latest
     container_name: vuxkoWebDeploy
     sysctls:
       net.core.somaxconn: 1024
