@@ -57,7 +57,7 @@ services:
     - "6378:6379"
 
   celery:
-    build: .
+    image: public.ecr.aws/i0m6d4r8/libpoblete:latest
     container_name: vuxkoWebCelery
     env_file:
     - ../.env
