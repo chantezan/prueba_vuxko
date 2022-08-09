@@ -58,19 +58,34 @@ ROOT_URLCONF = 'vuxkotrade.urls'
 
 # Directorio de Vue
 UI_DIR = os.path.join(BASE_DIR, 'ui/')
+from webpack_loader.loader import WebpackLoader
 
+class ExternalWebpackLoader(WebpackLoader):
+
+  def load_assets(self):
+    url = self.config['STATS_URL']
+    return requests.get(url).json()
 # Opciones de webpack-loader
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'webpack_bundles/',
-        'STATS_FILE': os.path.join(UI_DIR, 'webpack-stats.json'),
-        'POLL_INTERVAL': 0.1,
-        'TIMEOUT': None,
-        'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
-        'LOADER_CLASS': 'webpack_loader.loader.WebpackLoader',
+if True:
+    WEBPACK_LOADER = {
+        'DEFAULT': {
+            'CACHE': not DEBUG,
+            'BUNDLE_DIR_NAME': 'webpack_bundles/',
+            'STATS_FILE': os.path.join(UI_DIR, 'webpack-stats.json'),
+            'POLL_INTERVAL': 0.1,
+            'TIMEOUT': None,
+            'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
+            'LOADER_CLASS': 'webpack_loader.loader.WebpackLoader',
+        }
     }
-}
+else:
+    WEBPACK_LOADER = {
+        'DEFAULT': {
+'LOADER_CLASS': 'ExternalWebpackLoader',
+      # Custom config setting made available in WebpackLoader's self.config
+      'STATS_URL': 'https://main.d1lcpenlpi9xvq.amplifyapp.com/js/main.js/',
+        }
+    }
 
 TEMPLATES = [
     {

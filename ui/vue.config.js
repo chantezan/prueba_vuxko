@@ -3,6 +3,7 @@ const BundleTracker = require("webpack-bundle-tracker");
 
 module.exports = {
     // La ruta donde estará disponible el bundle de los archivos estáticos 
+  publicPath: "http://0.0.0.0:8080/",
     // Directorio donde se creará el bundle de archivos estáticos
     outputDir: './dist/',
     // Estable que se compile en tiempo de ejecución.
@@ -30,7 +31,7 @@ module.exports = {
 
     config.resolve.alias
     .set('__STATIC__', 'static')
-    config.output.filename("js/[name].js");
+    
     config.devServer
     .host('0.0.0.0')
     .port(8080)

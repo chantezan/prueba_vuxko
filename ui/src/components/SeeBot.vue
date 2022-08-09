@@ -1,5 +1,5 @@
 <template>
-  <div style="color: red;">Inicio proyecto vuxko, ema actual: {{ema}}
+  <div style="color: red;">Iddddnicio proyecto vuxko, esma actual: {{ema}}
   <div>
   <label for="activo">ufuuu a activo:</label>
   <label for="nombre">nombre</label>
