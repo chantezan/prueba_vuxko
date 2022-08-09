@@ -16,6 +16,11 @@
       "path": "/home/poblete/finanzas/ui/dist/index.html",
       "publicPath": "http://0.0.0.0:8080/index.html"
     },
+    "js/main.js.map": {
+      "name": "js/main.js.map",
+      "path": "/home/poblete/finanzas/ui/dist/js/main.js.map",
+      "publicPath": "http://0.0.0.0:8080/js/main.js.map"
+    },
     "main.html": {
       "name": "main.html",
       "path": "/home/poblete/finanzas/ui/dist/main.html",
