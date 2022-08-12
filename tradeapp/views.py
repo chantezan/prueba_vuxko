@@ -31,6 +31,16 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth import authenticate, login as login2
 
 def loginUser(request):
+    try:
+        print("try ecreando")
+        go = User.objects.get(username='user2')
+    except User.DoesNotExist:
+        print("ecreando")
+        user = User.objects.create_user('user2', 'use2r@crazymail.com', 'user2')
+        # Update fields and then save again
+        user.first_name = 'user2'
+        user.last_name = 'user2'
+        user.save()
 
     username = request.POST['username']
     password = request.POST['password']
