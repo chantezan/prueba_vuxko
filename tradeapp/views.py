@@ -45,7 +45,7 @@ def loginUser(request):
     username = request.POST['username']
     password = request.POST['password']
     print("asdfasd")
-    user = authenticate(username="user2", password="user2")
+    user = authenticate(username=username, password=password)
     print("b",user)
     if user is not None:
         a = login2(request,user)
