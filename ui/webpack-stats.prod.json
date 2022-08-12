@@ -1,0 +1,9 @@
+{
+  "status": "done",
+  "chunks": {
+    "main": [
+      "js/main.js"
+    ]
+  },
+  "publicPath": "https://main.d1lcpenlpi9xvq.amplifyapp.com/dist/"
+}

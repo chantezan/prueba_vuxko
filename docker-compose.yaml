@@ -14,16 +14,14 @@ services:
       - "5432:5432"
   web:
     container_name: vuxkoapp
-    image: public.ecr.aws/i0m6d4r8/libpoblete:latest
+    build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
       - "8000:8000"
-    environment:
-      - POSTGRES_NAME=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+    env_file:
+      - .env
     depends_on:
       - db
 

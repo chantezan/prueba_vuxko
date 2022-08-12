@@ -12,9 +12,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import django
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,7 +44,7 @@ INSTALLED_APPS = [
     'tradeapp',
     'rest_framework',
     'corsheaders',
-    'webpack_loader',
+    'webpack_loader'
 ]
 
 MIDDLEWARE = [
@@ -58,34 +61,14 @@ ROOT_URLCONF = 'vuxkotrade.urls'
 
 # Directorio de Vue
 UI_DIR = os.path.join(BASE_DIR, 'ui/')
-from webpack_loader.loader import WebpackLoader
 
-class ExternalWebpackLoader(WebpackLoader):
+print(os.environ.get('webpack-stats'))
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'STATS_FILE': os.path.join(UI_DIR, os.environ.get('webpack-stats')),
+    }
+}
 
-  def load_assets(self):
-    url = self.config['STATS_URL']
-    return requests.get(url).json()
-# Opciones de webpack-loader
-if True:
-    WEBPACK_LOADER = {
-        'DEFAULT': {
-            'CACHE': not DEBUG,
-            'BUNDLE_DIR_NAME': 'webpack_bundles/',
-            'STATS_FILE': os.path.join(UI_DIR, 'webpack-stats.json'),
-            'POLL_INTERVAL': 0.1,
-            'TIMEOUT': None,
-            'IGNORE': [r'.+\.hot-update.js', r'.+\.map'],
-            'LOADER_CLASS': 'webpack_loader.loader.WebpackLoader',
-        }
-    }
-else:
-    WEBPACK_LOADER = {
-        'DEFAULT': {
-'LOADER_CLASS': 'ExternalWebpackLoader',
-      # Custom config setting made available in WebpackLoader's self.config
-      'STATS_URL': 'https://main.d1lcpenlpi9xvq.amplifyapp.com/js/main.js/',
-        }
-    }
 
 TEMPLATES = [
     {
@@ -157,20 +140,33 @@ CELERY_TIMEZONE = "America/Santiago"
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
+#STATIC_URL = 'https://main.d1lcpenlpi9xvq.amplifyapp.com/js/main.js/'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'public/static/')
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'public/media/')
+MEDIA_URL= 'https://main.d1lcpenlpi9xvq.amplifyapp.com/'
+STATIC_ROOT = ''
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'public/static_dev/'),
-    os.path.join(BASE_DIR, "ui/dist"), # Bundle de VUE
+    # Put strings here, like "/home/html/static" or "C:/www/django/static".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    os.path.join(SITE_ROOT, '../static'),
+    os.path.join(DJANGO_ROOT, 'static'),
 )
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+  #  'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
+# List of callables that know how to import templates from various sources.
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

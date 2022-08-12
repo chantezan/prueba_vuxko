@@ -21,21 +21,21 @@
       "path": "/home/poblete/finanzas/ui/dist/main.html",
       "publicPath": "http://0.0.0.0:8080/main.html"
     },
-    "main.2cb32d534fc27060.hot-update.js": {
-      "name": "main.2cb32d534fc27060.hot-update.js",
-      "path": "/home/poblete/finanzas/ui/dist/main.2cb32d534fc27060.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.2cb32d534fc27060.hot-update.js"
+    "main.c1a88a3d65f073d8.hot-update.js": {
+      "name": "main.c1a88a3d65f073d8.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.c1a88a3d65f073d8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c1a88a3d65f073d8.hot-update.js"
     },
-    "main.2cb32d534fc27060.hot-update.json": {
-      "name": "main.2cb32d534fc27060.hot-update.json",
-      "path": "/home/poblete/finanzas/ui/dist/main.2cb32d534fc27060.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.2cb32d534fc27060.hot-update.json"
+    "main.c1a88a3d65f073d8.hot-update.json": {
+      "name": "main.c1a88a3d65f073d8.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.c1a88a3d65f073d8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c1a88a3d65f073d8.hot-update.json"
     }
   },
   "chunks": {
     "main": [
       "js/main.js",
-      "main.2cb32d534fc27060.hot-update.js"
+      "main.c1a88a3d65f073d8.hot-update.js"
     ]
   },
   "publicPath": "http://0.0.0.0:8080/"
