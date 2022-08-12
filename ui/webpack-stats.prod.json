@@ -4,7 +4,7 @@
     "js/main.js": {
       "name": "js/main.js",
       "path": "/home/poblete/finanzas/ui/dist/js/main.js",
-      "publicPath": "https://main.d1lcpenlpi9xvq.amplifyapp.com/dist/"
+      "publicPath": "https://main.d1lcpenlpi9xvq.amplifyapp.com/dist/js/main.js"
     },
     "favicon.ico": {
       "name": "favicon.ico",
