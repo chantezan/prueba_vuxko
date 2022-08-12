@@ -11,7 +11,7 @@ from .models import Bot, Indicator
 import json
 from django.forms.models import model_to_dict
 from django.shortcuts import redirect
-
+from django.contrib.auth.models import User
 def Extract(lst,index = 4):
     return list(map((itemgetter(index)), lst ))
 

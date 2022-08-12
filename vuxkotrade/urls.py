@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from tradeapp import views
 
-from django.contrib.auth.models import User
+
 
 # Create user and save to the database
 
