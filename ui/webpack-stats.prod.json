@@ -1,5 +1,37 @@
 {
   "status": "done",
+  "assets": {
+    "js/main.js": {
+      "name": "js/main.js",
+      "path": "/home/poblete/finanzas/ui/dist/js/main.js",
+      "publicPath": "http://0.0.0.0:8080/js/main.js"
+    },
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/home/poblete/finanzas/ui/dist/favicon.ico",
+      "publicPath": "http://0.0.0.0:8080/favicon.ico"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/home/poblete/finanzas/ui/dist/index.html",
+      "publicPath": "http://0.0.0.0:8080/index.html"
+    },
+    "main.html": {
+      "name": "main.html",
+      "path": "/home/poblete/finanzas/ui/dist/main.html",
+      "publicPath": "http://0.0.0.0:8080/main.html"
+    },
+    "main.c1a88a3d65f073d8.hot-update.js": {
+      "name": "main.c1a88a3d65f073d8.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.c1a88a3d65f073d8.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.c1a88a3d65f073d8.hot-update.js"
+    },
+    "main.c1a88a3d65f073d8.hot-update.json": {
+      "name": "main.c1a88a3d65f073d8.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.c1a88a3d65f073d8.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.c1a88a3d65f073d8.hot-update.json"
+    }
+  },
   "chunks": {
     "main": [
       "js/main.js"
