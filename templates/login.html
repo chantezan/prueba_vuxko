@@ -1,0 +1,21 @@
+
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuxko ddTrade</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Creear Bot poblete</h1>
+    <div id="app" style="text-align: center;">
+   <base-login/>
+</div>
+    {% render_bundle 'main' %}
+    <link href="{% static 'ronfe.css' %}" rel="stylesheet" type="text/css" />
+</body>
+</html>
+
+   

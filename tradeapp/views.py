@@ -10,17 +10,42 @@ from django.views.decorators.csrf import csrf_exempt
 from .models import Bot, Indicator
 import json
 from django.forms.models import model_to_dict
+from django.shortcuts import redirect
 
 def Extract(lst,index = 4):
     return list(map((itemgetter(index)), lst ))
 
-async def index(request):
+from django.contrib.auth.decorators import login_required
+
+@login_required
+def index(request):
     #time.sleep(5)
     print("asssd")
     
 
     #await asyncio.sleep(20)
     return render(request, 'index.html')
+
+from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login as login2
+
+def loginUser(request):
+
+    username = request.POST['username']
+    password = request.POST['password']
+    print("asdfasd")
+    user = authenticate(username="user2", password="user2")
+    print("b",user)
+    if user is not None:
+        a = login2(request,user)
+        return redirect("/")
+    else:
+        # No backend authenticated the credentials
+        return JsonResponse({"ok":"no"})
+
+async def login(request):
+    return render(request, 'login.html')
 
 def SeeBot(request,see_bot):
     return render(request, 'index2.html',{"id":see_bot})

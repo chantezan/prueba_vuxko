@@ -21,21 +21,111 @@
       "path": "/home/poblete/finanzas/ui/dist/main.html",
       "publicPath": "http://0.0.0.0:8080/main.html"
     },
-    "main.c1a88a3d65f073d8.hot-update.js": {
-      "name": "main.c1a88a3d65f073d8.hot-update.js",
-      "path": "/home/poblete/finanzas/ui/dist/main.c1a88a3d65f073d8.hot-update.js",
-      "publicPath": "http://0.0.0.0:8080/main.c1a88a3d65f073d8.hot-update.js"
+    "main.e70a9c46e29021d7.hot-update.js": {
+      "name": "main.e70a9c46e29021d7.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.e70a9c46e29021d7.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.e70a9c46e29021d7.hot-update.js"
     },
-    "main.c1a88a3d65f073d8.hot-update.json": {
-      "name": "main.c1a88a3d65f073d8.hot-update.json",
-      "path": "/home/poblete/finanzas/ui/dist/main.c1a88a3d65f073d8.hot-update.json",
-      "publicPath": "http://0.0.0.0:8080/main.c1a88a3d65f073d8.hot-update.json"
+    "main.e70a9c46e29021d7.hot-update.json": {
+      "name": "main.e70a9c46e29021d7.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.e70a9c46e29021d7.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.e70a9c46e29021d7.hot-update.json"
+    },
+    "main.a5a0945a20e5d4b4.hot-update.js": {
+      "name": "main.a5a0945a20e5d4b4.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.a5a0945a20e5d4b4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.a5a0945a20e5d4b4.hot-update.js"
+    },
+    "main.a5a0945a20e5d4b4.hot-update.json": {
+      "name": "main.a5a0945a20e5d4b4.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.a5a0945a20e5d4b4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.a5a0945a20e5d4b4.hot-update.json"
+    },
+    "main.adac923423d7c48e.hot-update.js": {
+      "name": "main.adac923423d7c48e.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.adac923423d7c48e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.adac923423d7c48e.hot-update.js"
+    },
+    "main.adac923423d7c48e.hot-update.json": {
+      "name": "main.adac923423d7c48e.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.adac923423d7c48e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.adac923423d7c48e.hot-update.json"
+    },
+    "main.d58b2b680e6cb968.hot-update.js": {
+      "name": "main.d58b2b680e6cb968.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.d58b2b680e6cb968.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d58b2b680e6cb968.hot-update.js"
+    },
+    "main.d58b2b680e6cb968.hot-update.json": {
+      "name": "main.d58b2b680e6cb968.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.d58b2b680e6cb968.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d58b2b680e6cb968.hot-update.json"
+    },
+    "main.1bc6c0c2b8afc459.hot-update.js": {
+      "name": "main.1bc6c0c2b8afc459.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.1bc6c0c2b8afc459.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.1bc6c0c2b8afc459.hot-update.js"
+    },
+    "main.1bc6c0c2b8afc459.hot-update.json": {
+      "name": "main.1bc6c0c2b8afc459.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.1bc6c0c2b8afc459.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.1bc6c0c2b8afc459.hot-update.json"
+    },
+    "main.855f7872fc6bcc0b.hot-update.js": {
+      "name": "main.855f7872fc6bcc0b.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.855f7872fc6bcc0b.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.855f7872fc6bcc0b.hot-update.js"
+    },
+    "main.855f7872fc6bcc0b.hot-update.json": {
+      "name": "main.855f7872fc6bcc0b.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.855f7872fc6bcc0b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.855f7872fc6bcc0b.hot-update.json"
+    },
+    "main.99b8d00905137b43.hot-update.js": {
+      "name": "main.99b8d00905137b43.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.99b8d00905137b43.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.99b8d00905137b43.hot-update.js"
+    },
+    "main.99b8d00905137b43.hot-update.json": {
+      "name": "main.99b8d00905137b43.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.99b8d00905137b43.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.99b8d00905137b43.hot-update.json"
+    },
+    "main.71f509011f8b510f.hot-update.js": {
+      "name": "main.71f509011f8b510f.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.71f509011f8b510f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.71f509011f8b510f.hot-update.js"
+    },
+    "main.71f509011f8b510f.hot-update.json": {
+      "name": "main.71f509011f8b510f.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.71f509011f8b510f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.71f509011f8b510f.hot-update.json"
+    },
+    "main.d9f360a0c2ca7bcb.hot-update.js": {
+      "name": "main.d9f360a0c2ca7bcb.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.d9f360a0c2ca7bcb.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.d9f360a0c2ca7bcb.hot-update.js"
+    },
+    "main.d9f360a0c2ca7bcb.hot-update.json": {
+      "name": "main.d9f360a0c2ca7bcb.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.d9f360a0c2ca7bcb.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.d9f360a0c2ca7bcb.hot-update.json"
+    },
+    "main.bf27b50e65a946e3.hot-update.js": {
+      "name": "main.bf27b50e65a946e3.hot-update.js",
+      "path": "/home/poblete/finanzas/ui/dist/main.bf27b50e65a946e3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/main.bf27b50e65a946e3.hot-update.js"
+    },
+    "main.bf27b50e65a946e3.hot-update.json": {
+      "name": "main.bf27b50e65a946e3.hot-update.json",
+      "path": "/home/poblete/finanzas/ui/dist/main.bf27b50e65a946e3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/main.bf27b50e65a946e3.hot-update.json"
     }
   },
   "chunks": {
     "main": [
       "js/main.js",
-      "main.c1a88a3d65f073d8.hot-update.js"
+      "main.bf27b50e65a946e3.hot-update.js"
     ]
   },
   "publicPath": "http://0.0.0.0:8080/"

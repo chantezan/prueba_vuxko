@@ -17,7 +17,24 @@ from django.contrib import admin
 from django.urls import path
 from tradeapp import views
 
+from django.contrib.auth.models import User
+
+# Create user and save to the database
+try:
+    print("try ecreando")
+    go = User.objects.get(username='user2')
+except User.DoesNotExist:
+    print("ecreando")
+    user = User.objects.create_user('user2', 'use2r@crazymail.com', 'user2')
+    # Update fields and then save again
+    user.first_name = 'user2'
+    user.last_name = 'user2'
+    user.save()
+
+
 urlpatterns = [
+    path('loginuser/', views.loginUser),
+    path('login/', views.login),
     path('admin/', admin.site.urls),
     path('', views.index),
     path('bot', views.getBot),
